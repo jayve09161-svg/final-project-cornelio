@@ -1,4 +1,6 @@
-# [App Name]
+# Lost It? Found It.
+A community lost-and-found platform for Manolo Fortich that lets finders log recovered items, owners post missing belongings, and verified local drop-off points track claims until handover.
+
 <!-- About your app: what does your app do? Example: "Today's carinderia menu and orders, without paper." -->
 
 ## Problem

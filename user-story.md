@@ -17,24 +17,27 @@ US1: As a customer, I want to see today's menu with prices so that I can decide 
 US - User Story
 -->
 
-### Feature: 
-US1:
+### Feature: Login Page 
+US1: As a User, I want to view a clean, responsive "Lost It? Found It." login page (index.html), so that I immediately understand the platform's purpose in Manolo Fortich and can easily locate the sign-in option on any device.
 
-US2:
-
-US3:
-
-### Feature: 
-US1:
-
-US2:
+US2: As a User, I want to sign in quickly on the login page using my Google account without registering a new account, so that my identity is verified, my session is saved, and I am directed to the main dashboard (app.html).
 
 US3:
 
-### Feature:
-US1:
+### Feature: Lost & Found Reporting Dashboard
+US3: As a User, I want to view a well-organized, responsive main dashboard (app.html) displaying my signed-in profile, post action buttons, search/filter controls, and item feed containers, so that I can navigate reporting and browsing lost or found items easily on any screen size.
 
-US2:
+US4: As a User (acting as a Finder), I want to submit a valid found-item post with the item category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, or Other Items), date and time not in the future, place, finder name, description, valid photo type and size—with sensitive details cropped or obscured to at most half for IDs & Documents—a custom drop-off point, and my contact info, so that the item is listed on the dashboard and its owner can contact me directly to recover it.
 
-US3:
+US5: As a User (acting as an Owner), I want to submit a lost-item post with the item description, category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, or Other Items), last-seen location, date and time lost, optional photo (cropped to at most half for IDs & Documents), and my contact details, so that anyone who finds my missing item can recognize it and contact me directly.
 
+### Feature: Live Search & Multi-Filter
+US6: As a User, I want to type keywords into a live search bar on the dashboard, so that I can quickly find matching lost or found items by name, description, or location.
+
+US7: As a User, I want to filter dashboard posts by item category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, and Other Items), so that I can focus on a specific type of lost or found item.
+
+US8: As a User, I want to filter dashboard posts by location, so that I can see items reported around a specific place.
+
+US9: As a User, I want to filter dashboard posts by date, so that I can find items reported or lost/found on a specific day.
+
+US10: As a User, I want to filter dashboard posts by drop-off point, so that I can locate items associated with a specific handover spot.

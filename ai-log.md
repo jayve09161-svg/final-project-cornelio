@@ -48,3 +48,12 @@ Minimum of 5 meaningful AI logs.
 - **What I changed or rejected, and why:**
 - **How I tested it:**
 - **What I learned:**
+
+## Entry 1: Nov 24, 2026
+- **User story:** US1: Login page structure and layout
+- **What I asked:** I Shared my project context for "Lost It? Found It." including my `US1` with its acceptance criteria , and asked for a step-by-step plan without code yet, and then requested Step 1 code by showing my existing `index.html` skeleton through copy pasting.
+- **What the AI suggested:** It Suggested a 5-step plan for `US1`, and told me to update `<title>` and add `<link rel="stylesheet" href="styles.css">` in `index.html`.
+- **What I changed or rejected, and why:** I Kept my existing `index.html` skeleton and asked for only the Step 1 code and target file so I could apply the change step by step.
+- **How I tested it:** I Checked the updated `<head>` tags in `index.html`; full browser checks for `AC1`–`AC3` (at `360px` and `1280px` plus contrast and stylesheet testing) remain to be completed as the rest of `US1` is built.
+- **What I learned:** Keeping `lang` and `viewport` intact and matching exact lowercase filenames like `styles.css` helps prevent layout and deployment issues early on.
+
