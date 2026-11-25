@@ -57,56 +57,22 @@ Minimum of 5 meaningful AI logs.
 - **How I tested it:** I Checked the updated `<head>` tags in `index.html`; full browser checks for `AC1`–`AC3` (at `360px` and `1280px` plus contrast and stylesheet testing) remain to be completed as the rest of `US1` is built.
 - **What I learned:** Keeping `lang` and `viewport` intact and matching exact lowercase filenames like `styles.css` helps prevent layout and deployment issues early on.
 
-# AI Log: Lost It? Found It.
-
-## Entry 1: US1 Login Page (Nov 25, 2026)
-
-**What I asked the AI:** Help me plan and build the login page (index.html).
-
-**What the AI suggested:** A 5-step plan: page skeleton, page content, basic styling, responsive styling, and testing against my acceptance criteria. The AI gave small pieces of code and explained each one.
-
-**What I did:**
-- Wrote my own acceptance criteria (AC1 to AC3).
-- Built the page one step at a time and tested each step.
-- Tested AC1 to AC3 at 1280px, 360px, and 320px. All passed.
-
-**What I learned:**
-- Semantic HTML (`<main>`, `<h1>`, `<button>`) and accessibility basics (`lang`, viewport tag, `aria-live`).
-- `:empty` hides the status box when it has no message.
-- `:focus-visible` helps keyboard users.
-- Media queries go at the bottom of the CSS file so they can override earlier rules.
-
-## Entry 2: US2 Changes (Nov 25, 2026)
-
-**Original US2:** Sign in with a real Google account, identity verified, session saved, then go to app.html.
-
-**Problem found:** Real Google sign-in needs Google's own script and a Client ID. My project rule is plain HTML, CSS, and JavaScript only.
-
-**Options I compared:**
-- A: Ask my teacher.
-- B: Use real Google sign-in anyway.
-- C: Use a simulated sign-in.
-
-**My decision:** I chose option C.
-
-**How US2 changed:**
-- First version: a name and email form.
-- Final version (my idea): no form fields. One button, "Continue with Google (demo)", signs in a fixed demo user.
-- Session is saved in `localStorage`, then the user goes to app.html.
-
-**Other stories affected:**
-- US1: AC1 and the button text now say "Continue with Google (demo)". I need to re-test it.
-- US2: new wording and new ACs.
-- US3: the profile will show the demo user.
-- US4 to US10: no change needed.
-- Still to decide: where the Sign out button goes (US3 or US2).
-
-**Limits of my solution:**
-- Nothing is verified, because the sign-in is simulated.
-- `localStorage` can be edited by anyone in the browser's developer tools, so this is not real security.
-- Real Google sign-in would need Google's script and a Client ID.
-
-**AI vs. me:** The AI pointed out the problem and the options, and suggested the first rewrite. I made the final decisions (option C, removing the form fields, the button label).
-
-**Still unsure about:** Whether my teacher accepts a simulated sign-in.
-
+## Entry 2: Nov 25, 2026
+- **User story:** US2: Simulated sign-in (originally real Google sign-in)
+- **What I asked:** Help me do US2. Then I asked what to do because of my plain HTML/CSS/JS rule.
+- **What the AI suggested:** Real Google sign-in needs Google's own script and a Client ID, so it conflicts with my rule. It gave three options (ask my teacher, use real Google sign-in anyway, or simulate the sign-in). It suggested rewording US2 and checking which other stories are affected. It then gave a 5-step plan and code in small pieces.
+- **What I changed or rejected, and why:**
+  - I chose a simulated sign-in because of my "plain only" rule.
+  - The AI first suggested a name and email form. I removed it and chose one button, "Continue with Google (demo)", with a fixed demo user (Userjv, userjv@example.com).
+  - I decided that a signed-in user opening index.html goes straight to app.html.
+  - Stories affected: US1 (button text and AC1), US2 (new wording and ACs), US3 (profile shows the demo user). US4 to US10 need no change.
+  - Still to decide: where the Sign out button goes (US3 or US2).
+- **How I tested it:**
+  - Step 2: typed `DEMO_USER` in the Console and saw the object with my name and email. Pass.
+  - Steps 3 to 5 (AC1 to AC5): not tested yet. I will mark each as pass or fail here.
+  - I will also re-test US1's layout at 320px, 360px, and 1280px.
+- **What I learned:**
+  - Why real Google sign-in cannot be done with plain HTML, CSS and JS only.
+  - `localStorage` stores text only, so objects need `JSON.stringify`.
+  - A script shared by two pages must check that an element exists before using it.
+  - Limits of my solution: nothing is verified, and `localStorage` can be edited by anyone in the browser's developer tools, so it is not real security. I still need to ask my teacher whether a simulated sign-in is accepted.

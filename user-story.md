@@ -24,14 +24,14 @@ US2: As a User, I want to click a "Continue with Google (demo)" button on the lo
 
 US3:
 
-### Feature: Lost & Found Reporting Dashboard
+### Feature: Item Reporting Dashboard
 US3: As a User, I want to view a well-organized, responsive main dashboard (app.html) displaying my signed-in profile, post action buttons, search/filter controls, and item feed containers, so that I can navigate reporting and browsing lost or found items easily on any screen size.As a User, I want to view the main dashboard (app.html) with my simulated demo profile, a Sign out button, post triggers, a Today / All toggle, and separate found and lost item sections so that I can navigate and manage items easily.
 
 US4: As a User (acting as a Finder), I want to submit a valid found-item post with the item category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, or Other Items), date and time not in the future, place, finder name, description, valid photo type and size—with sensitive details cropped or obscured to at most half for IDs & Documents—a custom drop-off point, and my contact info, so that the item is listed on the dashboard and its owner can contact me directly to recover it.
 
 US5: As a User (acting as an Owner), I want to submit a lost-item post with the item description, category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, or Other Items), last-seen location, date and time lost, optional photo (cropped to at most half for IDs & Documents), and my contact details, so that anyone who finds my missing item can recognize it and contact me directly.
 
-### Feature: Live Search & Multi-Filter
+### Feature: Search & Filter
 US6: As a User, I want to type keywords into a live search bar on the dashboard, so that I can quickly find matching lost or found items by name, description, or location.
 
 US7: As a User, I want to filter dashboard posts by item category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, and Other Items), so that I can focus on a specific type of lost or found item.
