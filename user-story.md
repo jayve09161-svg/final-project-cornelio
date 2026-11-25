@@ -20,7 +20,7 @@ US - User Story
 ### Feature: Login Page 
 US1: As a User, I want to view a clean, responsive "Lost It? Found It." login page (index.html), so that I immediately understand the platform's purpose in Manolo Fortich and can easily locate the sign-in option on any device.
 
-US2: As a User, I want to sign in quickly on the login page using my Google account without registering a new account, so that my identity is verified, my session is saved, and I am directed to the main dashboard (app.html).
+As a User, I want to click a "Continue with Google (demo)" button on the login page to sign in with a simulated account, without registering, so that my session is saved and I am directed to the main dashboard (app.html).
 
 US3:
 
