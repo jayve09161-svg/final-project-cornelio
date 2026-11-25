@@ -37,18 +37,18 @@ US3:
 # Acceptance Criteria
 
 ### US1: Login Page Structure & Layout
-- AC1: Opening index.html displays the "Lost It? Found It." title, a clear one-sentence description of its purpose for Manolo Fortich residents, a prominent "Continue with Google" button, and a dedicated container for authentication status/error messages.
+- AC1: The login page displays the Lost It? Found It. branding, a brief description for Manolo Fortich residents, a prominent "Continue with Google (demo)" button, and a short note stating that sign-in is simulated for demo purposes.
 - AC2: All page elements use semantic HTML (<main>, <h1>, <p>, <button>), accessible labels, clear contrast, and proper spacing with no broken links or missing stylesheet references.
 - AC3: The login page layout centers cleanly and remains readable without horizontal scrolling or overlapping elements on both desktop and phone-sized screens.
 
 ### US2: Google Account Login & Session Persistence
-- AC1: The login page has a clearly labeled sign-in button, and it states that this is a demo sign-in.
-- AC2: Clicking the button saves the simulated user in localStorage and shows a short message in #auth-status.
-- AC3: After sign-in, the user is sent to app.html.
-- AC4: If the user reloads while signed in, the session is still there.
-- AC5: If someone opens app.html without being signed in, they are sent back to index.html.
+- AC1: Clicking "Continue with Google (demo)" saves a fixed simulated user session (e.g., name and email) into localStorage.
+- AC2: Clicking the sign-in button displays a short status message inside #auth-status before redirecting.
+- AC3: After saving the session, the user is automatically directed to app.html.
+- AC4: Reloading app.html (or reopening the site while signed in) keeps the user signed in via localStorage.
+- AC5: Opening app.html directly without an active session in localStorage redirects the user back to index.html.
 ### US3: Main Dashboard Structure & Layout
-- AC1: Opening app.html as an authenticated user displays a header with the "Lost It? Found It." branding, the signed-in user's name/email, a Sign Out button, action triggers for Report Found Item and Report Lost Item, search/filter input controls, a Today / All toggle, and dedicated feed sections for Recently Found and Active Lost items.
+- AC1: Opening app.html as an authenticated user displays a header with the "Lost It? Found It." branding, the signed-in simulated demo user's name/email, a Sign Out button, action triggers for Report Found Item and Report Lost Item, search/filter input controls, a Today / All toggle, and dedicated feed sections for Recently Found and Active Lost items.
 - AC2: All dashboard landmarks (<header>, <nav>, <main>, <section>), buttons, form inputs, and labels use semantic HTML with proper for/id associations, clear contrast, and no broken stylesheet or script links.
 - AC3: The dashboard adapts cleanly across desktop (3-column card grid), tablet (2-column grid), and phone-sized screens (1-column stack) without horizontal overflow or overlapping controls.
 
