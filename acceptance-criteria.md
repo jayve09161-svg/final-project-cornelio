@@ -42,10 +42,11 @@ US3:
 - AC3: The login page layout centers cleanly and remains readable without horizontal scrolling or overlapping elements on both desktop and phone-sized screens.
 
 ### US2: Google Account Login & Session Persistence
-- AC1: Clicking "Continue with Google" and selecting a valid Google account profile loads the user's name and email without requiring a manual sign-up form and redirects to app.html.
-- AC2: Cancelled, failed, or invalid Google sign-in attempts display a visible error message on index.html, allow the user to retry, and block unauthenticated users who try to open app.html directly by redirecting them back to index.html.
-- AC3: Successful Google sign-in stores the active user session in localStorage so the user stays signed in when refreshing app.html (until signing out).
-
+- AC1: The login page has a clearly labeled sign-in button, and it states that this is a demo sign-in.
+- AC2: Clicking the button saves the simulated user in localStorage and shows a short message in #auth-status.
+- AC3: After sign-in, the user is sent to app.html.
+- AC4: If the user reloads while signed in, the session is still there.
+- AC5: If someone opens app.html without being signed in, they are sent back to index.html.
 ### US3: Main Dashboard Structure & Layout
 - AC1: Opening app.html as an authenticated user displays a header with the "Lost It? Found It." branding, the signed-in user's name/email, a Sign Out button, action triggers for Report Found Item and Report Lost Item, search/filter input controls, a Today / All toggle, and dedicated feed sections for Recently Found and Active Lost items.
 - AC2: All dashboard landmarks (<header>, <nav>, <main>, <section>), buttons, form inputs, and labels use semantic HTML with proper for/id associations, clear contrast, and no broken stylesheet or script links.
