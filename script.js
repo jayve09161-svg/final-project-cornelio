@@ -8,6 +8,25 @@ const DEMO_USER = {
 const signInButton = document.getElementById("google-signin-btn");
 const authStatus = document.getElementById("auth-status");
 
+function getSavedUser() {
+    try {
+        const savedUser = localStorage.getItem(STORAGE_KEY);
+        return savedUser ? JSON.parse(savedUser) : null;
+    } catch (error) {
+        return null;
+    }
+}
+
+function requireLogin() {
+    if (!getSavedUser()) {
+        window.location.replace("index.html");
+    }
+}
+
+if (signInButton && getSavedUser()) {
+    window.location.replace("app.html");
+}
+
 if (signInButton) {
     signInButton.addEventListener("click", function () {
         try {
