@@ -43,3 +43,16 @@ if (signInButton) {
         }, 1000);
     });
 }
+
+function showProfile() {
+    const user = getSavedUser();
+    const nameElement = document.getElementById("profile-name");
+    const emailElement = document.getElementById("profile-email");
+
+    if (user && nameElement && emailElement) {
+        nameElement.textContent = user.name;
+        emailElement.textContent = user.email;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", showProfile);
