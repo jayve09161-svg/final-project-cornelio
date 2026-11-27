@@ -76,3 +76,24 @@ Minimum of 5 meaningful AI logs.
   - `localStorage` stores text only, so objects need `JSON.stringify`.
   - A script shared by two pages must check that an element exists before using it.
   - Limits of my solution: nothing is verified, and `localStorage` can be edited by anyone in the browser's developer tools, so it is not real security. I still need to ask my teacher whether a simulated sign-in is accepted.
+
+  ## Entry 3: Nov 27, 2026
+- **User story:** US2: Simulated sign-in (build and testing)
+- **What I asked:** A step-by-step plan for US2 with my five acceptance criteria, then code in small pieces.
+- **What the AI suggested:** A 5-step plan: prepare files, decide the demo user data, sign in on click, keep the session, and protect app.html. It also warned about the shared script.js crashing on pages without the button, and about `localStorage` storing text only.
+- **What I changed or rejected, and why:**
+  - I chose the demo user name "Userjv" and the email "userjv@example.com".
+  - I decided that a signed-in user opening index.html goes straight to app.html.
+  - I moved the stray "Dashboard (placeholder)" heading out of index.html, because it was a second h1 on the login page.
+- **How I tested it:**
+  - AC1 (user saved in Local Storage): Pass.
+  - AC2 (status message before redirect): Pass.
+  - AC3 (redirect to app.html): Pass.
+  - AC4 (session kept after reload or reopening): Pass.
+  - AC5 (app.html without a session goes back to index.html): Pass.
+  - US1 re-test: login page at 356px looked fine with the longer button label and no Console issues. I still need to test the status message, 320px, and 1280px.
+- **What I learned:**
+  - `JSON.stringify` and `JSON.parse` convert objects to text and back for `localStorage`.
+  - `window.location.replace` does not keep the old page in the history.
+  - `requireLogin()` runs in the head so the dashboard does not flash before the redirect.
+  - This is not real security, because anyone can edit `localStorage`.
