@@ -22,22 +22,20 @@ US1: As a User, I want to view a clean, responsive "Lost It? Found It." login pa
 
 US2: As a User, I want to click a "Continue with Google (demo)" button on the login page to sign in with a simulated account, without registering, so that my session is saved and I am directed to the main dashboard (app.html).
 
-US3:
+### Feature: Item Dashboard
+US3: As a User, I want to view a well-organized, responsive main dashboard (app.html) showing my profile, post buttons, search and filter controls, and separate found and lost item sections, so that I can easily report and browse lost or found items on any screen size.
 
-### Feature: Item Reporting Dashboard
-US3: As a User, I want to view a well-organized, responsive main dashboard (app.html) displaying my signed-in profile, post action buttons, search/filter controls, and item feed containers, so that I can navigate reporting and browsing lost or found items easily on any screen size.As a User, I want to view the main dashboard (app.html) with my simulated demo profile, a Sign out button, post triggers, a Today / All toggle, and separate found and lost item sections so that I can navigate and manage items easily.
+### Feature: Report Found Item
+US4: As a User (acting as a Finder), I want to post a found item with its details and my contact information, so that its owner can see it and contact me to get it back.
 
-US4: As a User (acting as a Finder), I want to submit a valid found-item post with the item category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, or Other Items), date and time not in the future, place, finder name, description, valid photo type and size—with sensitive details cropped or obscured to at most half for IDs & Documents—a custom drop-off point, and my contact info, so that the item is listed on the dashboard and its owner can contact me directly to recover it.
+### Feature: Report Lost Item
+US5: As a User (acting as an Owner), I want to post a lost item with its details and my contact information, so that anyone who finds it can recognize it and contact me.
 
-US5: As a User (acting as an Owner), I want to submit a lost-item post with the item description, category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, or Other Items), last-seen location, date and time lost, optional photo (cropped to at most half for IDs & Documents), and my contact details, so that anyone who finds my missing item can recognize it and contact me directly.
+### Feature: Search
+US6: As a User, I want to type keywords into a live search bar on the dashboard, so that I can quickly find lost or found items by item name, description, or location.
 
-### Feature: Search & Filter
-US6: As a User, I want to type keywords into a live search bar on the dashboard, so that I can quickly find matching lost or found items by name, description, or location.
+### Feature: Filter
+US7: As a User, I want to filter dashboard posts by category, location, date, and drop-off point, so that I can quickly find the lost or found items I care about.
 
-US7: As a User, I want to filter dashboard posts by item category (IDs & Documents, Phones & Electronics, Wallets & Cash, Bags & Accessories, Keys, and Other Items), so that I can focus on a specific type of lost or found item.
-
-US8: As a User, I want to filter dashboard posts by location, so that I can see items reported around a specific place.
-
-US9: As a User, I want to filter dashboard posts by date, so that I can find items reported or lost/found on a specific day.
-
-US10: As a User, I want to filter dashboard posts by drop-off point, so that I can locate items associated with a specific handover spot.
+### Feature: Close a Post
+US8: As a User, I want to mark my own post as Returned or Resolved, so that others know the item no longer needs attention.
