@@ -56,3 +56,20 @@ function showProfile() {
 }
 
 document.addEventListener("DOMContentLoaded", showProfile);
+
+function signOut() {
+    try {
+        localStorage.removeItem(STORAGE_KEY);
+    } catch (error) {
+        console.error("Could not clear the saved session.", error);
+    }
+    window.location.replace("index.html");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const signOutButton = document.getElementById("signout-btn");
+
+    if (signOutButton) {
+        signOutButton.addEventListener("click", signOut);
+    }
+});
