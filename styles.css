@@ -69,11 +69,114 @@ h1 {
 #auth-status:empty {
     display: none;
 }
-@media (max-width: 480px) {
-    body {
-        padding: 12px;
-    }
 
+.dashboard-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 16px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile {
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.profile p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+.profile-name {
+    font-weight: bold;
+}
+.profile-email {
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.dashboard-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.post-actions,
+.view-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.dashboard-page button {
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: 1px solid #1d4ed8;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.post-actions button {
+    color: #ffffff;
+    background-color: #1d4ed8;
+}
+
+#report-lost-btn {
+    background-color: #b45309;
+    border-color: #b45309;
+}
+
+.view-toggle button[aria-pressed="true"] {
+    color: #ffffff;
+    background-color: #1d4ed8;
+}
+
+.view-toggle button[aria-pressed="false"] {
+    color: #1d4ed8;
+    background-color: #ffffff;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.field label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.field input,
+.field select {
+    min-height: 44px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #6b7280;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 12px;
+       }
     .login-card {
         padding: 24px 16px;
     }
