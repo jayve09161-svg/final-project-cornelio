@@ -37,8 +37,8 @@ US2:
 
 US3:
 
-- AC3.1: Opening `app.html` as an authenticated user displays a header with the "Lost It? Found It." branding, the signed-in simulated demo user's name/email, a Sign Out button, action triggers for Report Found Item and Report Lost Item, search/filter input controls, a Today / All toggle, and dedicated feed sections for Recently Found and Active Lost items.
-- AC3.2: All dashboard landmarks (`<header>`, `<nav>`, `<main>`, `<section>`), buttons, form inputs, and labels use semantic HTML with proper `for`/`id` associations, clear contrast, and no broken stylesheet or script links.
+- AC3.1: Opening `app.html` as an authenticated user displays a header with the "Lost It? Found It." branding, the signed-in simulated demo user's name/email, a Sign Out button, action triggers for Report Found Item and Report Lost Item, search/filter input controls, a Today / All toggle, and dedicated feed sections for Recently Found and Active Lost items.In this story, the action triggers, search/filter controls, and toggle are visible and labeled only; their functions are built in US4 to US10.
+- AC3.2: All dashboard landmarks (`<header>`, `<nav>`, `<main>`, `<section>`), buttons, form inputs, and labels use semantic HTML with proper `for`/`id` associations,text contrast of at least 4.5:1, clear contrast, and no broken stylesheet or script links.
 - AC3.3: The dashboard adapts cleanly across desktop (3-column card grid), tablet (2-column grid), and phone-sized screens (1-column stack) without horizontal overflow or overlapping controls.
 
 US4:

@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard | Lost It? Found It.</title>
+       <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
         <script>requireLogin();</script>
 </head>
-<body>
-    <h1>Dashboard (placeholder)</h1>
+<body class="dashboard-page">
+
+    <header class="dashboard-header">
+        <h1>Lost It? Found It.</h1>
+        <div class="profile">
+            <p class="profile-name" id="profile-name"></p>
+            <p class="profile-email" id="profile-email"></p>
+        </div>
+        <button type="button" id="signout-btn">Sign Out</button>
+    </header>
+
+        <main class="dashboard-main">
+        <div class="post-actions" role="group" aria-label="Post actions">
+            <button type="button" id="report-found-btn">Report Found Item</button>
+            <button type="button" id="report-lost-btn">Report Lost Item</button>
+        </div>
+
+        <div class="view-toggle" role="group" aria-label="Show items from">
+            <button type="button" id="today-btn" aria-pressed="false">Today</button>
+            <button type="button" id="all-btn" aria-pressed="true">All</button>
+        </div>
+
+                <section class="filters" aria-label="Search and filters">
+            <div class="field">
+                <label for="search-input">Search</label>
+                <input type="search" id="search-input" placeholder="Name, description, or location">
+            </div>
+            <div class="field">
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="">All categories</option>
+                    <option>IDs &amp; Documents</option>
+                    <option>Phones &amp; Electronics</option>
+                    <option>Wallets &amp; Cash</option>
+                    <option>Bags &amp; Accessories</option>
+                    <option>Keys</option>
+                    <option>Other Items</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="location-filter">Location</label>
+                <input type="text" id="location-filter">
+            </div>
+            <div class="field">
+                <label for="date-filter">Date</label>
+                <input type="date" id="date-filter">
+            </div>
+            <div class="field">
+                <label for="dropoff-filter">Drop-off point</label>
+                <input type="text" id="dropoff-filter">
+            </div>
+        </section>
+
+    </main>
     
 </body>
 </html>
