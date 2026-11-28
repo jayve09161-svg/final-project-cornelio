@@ -100,6 +100,86 @@
         </section>
 
     </main>
+
+        <dialog id="found-dialog" aria-labelledby="found-dialog-title">
+        <form id="found-form" novalidate>
+            <h2 id="found-dialog-title">Report Found Item</h2>
+            <div class="field">
+                <label for="found-name">Item name</label>
+                <input type="text" id="found-name" name="itemName" aria-describedby="found-name-error">
+                <p class="error-message" id="found-name-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-category">Category</label>
+                <select id="found-category" name="category" aria-describedby="found-category-error">
+                    <option value="">Select a category</option>
+                    <option>IDs &amp; Documents</option>
+                    <option>Phones &amp; Electronics</option>
+                    <option>Wallets &amp; Cash</option>
+                    <option>Bags &amp; Accessories</option>
+                    <option>Keys</option>
+                    <option>Other Items</option>
+                </select>
+                <p class="error-message" id="found-category-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-datetime">Date and time found</label>
+                <input type="datetime-local" id="found-datetime" name="dateTime" aria-describedby="found-datetime-error">
+                <p class="error-message" id="found-datetime-error"></p>
+            </div>
+
+                        <div class="field">
+                <label for="found-place">Place found</label>
+                <input type="text" id="found-place" name="place" aria-describedby="found-place-error">
+                <p class="error-message" id="found-place-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-finder">Finder name</label>
+                <input type="text" id="found-finder" name="finderName" aria-describedby="found-finder-error">
+                <p class="error-message" id="found-finder-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-description">Description</label>
+                <textarea id="found-description" name="description" rows="3" aria-describedby="found-description-error"></textarea>
+                <p class="error-message" id="found-description-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-photo">Photo</label>
+                <input type="file" id="found-photo" name="photo" accept="image/jpeg,image/png,image/webp" aria-describedby="found-photo-hint found-photo-error">
+                <p class="hint" id="found-photo-hint">JPG, PNG, or WebP, up to 5 MB. Photos of IDs &amp; Documents are blurred automatically.</p>
+                <p class="error-message" id="found-photo-error"></p>
+            </div>
+
+                        <div class="field">
+                <label for="found-dropoff">Drop-off point</label>
+                <input type="text" id="found-dropoff" name="dropoff" aria-describedby="found-dropoff-error">
+                <p class="error-message" id="found-dropoff-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-email">Email</label>
+                <input type="email" id="found-email" name="email" aria-describedby="found-email-error">
+                <p class="error-message" id="found-email-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-mobile">Mobile number</label>
+                <input type="tel" id="found-mobile" name="mobile" aria-describedby="found-mobile-hint found-mobile-error">
+                <p class="hint" id="found-mobile-hint">Use +639XXXXXXXXX or 09XXXXXXXXX.</p>
+                <p class="error-message" id="found-mobile-error"></p>
+            </div>
+            <div class="field">
+                <label for="found-social">Social media (optional)</label>
+                <input type="text" id="found-social" name="social" aria-describedby="found-social-hint found-social-error">
+                <p class="hint" id="found-social-hint">Plain text, up to 50 characters, like @userjv.</p>
+                <p class="error-message" id="found-social-error"></p>
+            </div>
+            <p class="error-message" id="found-form-error" role="alert"></p>
+            <div class="dialog-actions">
+                <button type="submit" id="found-submit-btn">Submit</button>
+                <button type="button" id="found-cancel-btn">Cancel</button>
+            </div>
+
+        </form>
+    </dialog>
     
 </body>
 </html>
