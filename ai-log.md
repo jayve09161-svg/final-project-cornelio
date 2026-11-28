@@ -97,3 +97,11 @@ Minimum of 5 meaningful AI logs.
   - `window.location.replace` does not keep the old page in the history.
   - `requireLogin()` runs in the head so the dashboard does not flash before the redirect.
   - This is not real security, because anyone can edit `localStorage`.
+
+## Entry 4: Nov 27, 2026
+- **User story:** US3: Main dashboard (story and AC rewrite)
+- **What I asked:** When I started US4, I noticed US3 had two "As a User" sentences. I asked the AI to check them against my ACs. Later I shared my instructor's slides and asked if my ACs followed Format A (rule-based checklist).
+- **What the AI suggested:** Merge the two sentences into one story, because neither covered everything in AC3.1. Remove `<nav>` from AC3.2 and add a Sign Out rule. Change the wording to match what I built and never change the working app. It first suggested splitting AC3.1 into 8 rules, then took that back after seeing the slides (about 3 to 7 rules per story).
+- **What I changed or rejected, and why:** I merged US3 into one story and deleted the stray `US3:` line. I rewrote the ACs as short rules that describe what the user sees, with no code details. I restored US4 after a copy-paste mistake overwrote it with US3's text.
+- **How I tested it:** I changed no code. I compared each new rule with the checks I had already finished and passed, and every rule matched one. I re-read the file to confirm there was one US3 and US4 was restored.
+- **What I learned:** I learned that story is short and the ACs hold the details, one testable rule per line. It should match what I built, not the other way around. I should check the AI's advice against my course material, and copy-paste mistake can overwrite a different story, so I should re-read the file after editing.
